@@ -9,10 +9,10 @@ const age = Number(prompt("Informe sua idade"));
 if (age < 16) {
     alert("Não eleitor");
     console.log("Não Eleitor");
-} else if (age > 18 && age <= 65) {
+} else if (age >= 18 && age <= 65) {
     alert("Eleitor obrigatório");
     console.log("Eleitor obrigatório");
-} else if (age === 16 || age <= 18 || age > 65) {
+} else if (age >= 16 || age < 18 || age > 65) {
     alert("Eleitor facultativo");
     console.log("Eleitor facultativo");
 }
