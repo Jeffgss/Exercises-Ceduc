@@ -1,0 +1,25 @@
+// Faça um programa que mostre o menu de opções a seguir, receba a opção do usuário e os dados necessários para executar cada operação.
+
+while (true) {
+
+  let choice = prompt("----Menu de opções----\n\n 1- Raiz quadrada\n 2- Potência\n 3- Sair\n\n Digite sua choice:");
+
+  if (choice === '1') {
+    let number = Number(prompt("Digite um número para ver sua raiz quadrada."));
+    let squareRoot = Math.sqrt(number);
+    alert(`√${number} = ${squareRoot.toFixed(2)}`);
+    console.log(`√${number} = ${squareRoot.toFixed(2)}`);
+  } else if (choice === '2') {
+    let base = Number(prompt("Digite um número"));
+    let exponent = Number(prompt(`${base} elevado a qual número?`));
+    let pow = Math.pow(base, exponent);
+    alert(`${base} elevado a ${exponent} = ${pow}`);
+    console.log(`${base} elevado a ${exponent} = ${pow}`);
+  } else if (choice === '3') {
+    alert("Saindo do programa!");
+    break;
+  } else {
+    alert("Opção inválida!\nFaça outra escolha!");
+    console.log("Opção inválida!\nFaça outra escolha!");
+  }
+}
