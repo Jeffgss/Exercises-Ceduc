@@ -1,4 +1,9 @@
-// Faça um programa que mostre o menu de opções a seguir, receba a opção do usuário e os dados necessários para executar cada operação.
+/* Faça um programa que mostre o menu de opções a seguir, receba a opção do usuário e os dados necessários para executar cada operação.
+Menu de opções:
+1- Raiz quadrada de um número
+2- Um número elevado a outro número
+3- Sair
+*/
 
 while (true) {
 
